@@ -26,3 +26,16 @@ int main() {
 			}
 		}
 	}
+
+/*
+Notes about improvements:
+* Not using pointers at all, so probably duping a bunch of stuff in memory.
+* Should probably be using const in places where I don't expect values to be changed.
+* This is a brute force method, could probably achieve something much more efficient if I:
+	* Sort the input values into ascending order.
+	* Implement some kind of Quicksort approach (except evaluating on sum of i + j).
+		* If sum is < 2020, pick value half way between end of sorted array and j, find sum.
+		* If sum is > 2020, pick value half way between start of sorted array and j, find sum.
+		* Continue until sum == 2020 OR we know there's no possible pair involving i that sums to 2020.
+		* This would allow me to avoid summing all possible pairs.
+*/
