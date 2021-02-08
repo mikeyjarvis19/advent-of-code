@@ -1,4 +1,4 @@
-#include <iostream>;
+#include <iostream>
 #include <fstream>
 #include <string>
 #include <vector>
@@ -26,6 +26,7 @@ int main() {
 			}
 		}
 	}
+}
 
 /*
 Notes about improvements:
